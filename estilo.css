@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "daisy radical";
+    src: url(fonts/Adlery-Pro-Blockletter-trial.ttf);
+}
+
+body {
+    background-image: linear-gradient(90deg, #ca248b, #004AAD);
+    text-align: center;
+    color: rgb(221, 219, 219);
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h1,
+h2 {
+    font-family: "daisy radical";
+}
+
+#sobre,
+#candidatar,
+#expectativas {
+    width: 25%;
+    display: inline-block;
+    margin: 1%;
+}
+
+#bateria{
+    width: 40%;
+}
+
+#circulo{
+    width: 13%;
+    position: relative;
+    right: 29%;
+    top: -4em;
+    opacity: 0;
+}
