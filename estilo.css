@@ -1,149 +1,24 @@
-@font-face {
-    font-family: "daisy radical";
-    src: url(fonts/Adlery-Pro-Blockletter-trial.ttf);
+body{
+    margin: 0%;
 }
-
-body {
-    background-image: linear-gradient(90deg, #ca248b, #004AAD);
+main{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 40vw;
+    margin: 0%;
+    padding: 2%;
     text-align: center;
-    color: rgb(221, 219, 219);
+    float: right;
+    height: 100vh;
+}
+h2{
+    margin: 0%;
 }
 
-.invisivel{
-    display: none;
+#canvas{
+    width: 54vw;
+    height: 100vh;
 }
-
-p {
-    font-family: 'Times New Roman', Times, serif
+#caixa{
+    text-align: center;
 }
-
-h2 {
-    font-size: 200%;
-}
-
-h1 {
-    font-size: 300%;
-    margin-bottom: 0%;
-}
-
-h3 {
-    font-size: 150%;
-    margin-top: 1%;
-}
-
-h1,
-h2,
-h3 {
-    font-family: "daisy radical";
-}
-
-#sobre,
-#candidatar,
-#expectativas {
-    width: 25%;
-    display: inline-block;
-    align-items: baseline;
-    margin: 1%;
-}
-
-#prato1,
-#prato2,
-#prato3,
-#timbalao,
-#tarola,
-#timbalao-chao,
-#bombo {
-    position: absolute;
-    width: 10%;
-}
-
-#prato1 {
-    left: 27%;
-    bottom: 0%;
-}
-
-#prato2 {
-    left: 34%;
-    bottom: 18%;
-}
-
-#prato3{
-    left: 53%;
-    bottom: 2%;
-}
-
-#timbalao{
-    bottom: 0%;
-}
-
-#tarola {
-    left: 32%;
-    bottom: 2%;
-}
-
-#timbalao-chao{
-    bottom: 0%;
-    left: 50%;
-}
-
-#bombo{
-    left: 41%;
-    bottom: 0%;
-}
-
-#timbalao{
-    left: 41%;
-    bottom: 17%;
-}
-
-
-#som-caixa>img{
-    width:30%;
-    margin-top: 0%;
-}
-#som-caixa>p{
-    margin-bottom: 0%;
-}
-
-
-
-@keyframes girando {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(-360deg);
-    }
-  }
-
-@media (min-width:901px) and (max-width: 1000px) {
-    #timbalao{
-        bottom: 15%;
-    }
-  }
-
-  @media (min-width:0px) and (max-width: 900px) {
-    #prato1,
-#prato2,
-#prato3,
-#timbalao,
-#tarola,
-#timbalao-chao,
-#bombo {
-    display: none;
-}
-
-#sobre,
-#candidatar,
-#expectativas {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-#som-caixa{
-    display:inline
-}
-  }

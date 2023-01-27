@@ -1,15 +1,51 @@
-const bombo = new Audio("sons/bombo.mp3")
+let canva = document.getElementById("canvas");
+let menos = document.querySelector("#menos");
+let maior= document.querySelector("#mais")
+let corEl = document.querySelector("#cor")
+let tamanhoEl = document.querySelector("#tamanho")
+let largura = 800;
+let altura = 600;
+let pincel = 1;
 
-let tambor = document.querySelector("#bombo")
+canva.setAttribute("width", largura);
+canva.setAttribute("height", altura);
 
-tambor.addEventListener("click", function(){
-    bombo.play()
+let ctx = canva.getContext("2d");
+
+let pressionado = false;
+ctx.strokeStyle = 'black';
+ctx.lineWidth = 1;
+
+canva.addEventListener("mousedown", function (e) {
+  ctx.moveTo(e.clientX, e.clientY);
+  pressionado = true;
+});
+
+canva.addEventListener("mouseup", function () {
+  pressionado = false;
+});
+
+canva.addEventListener("mousemove", function (e) {
+  if (pressionado) {
+    ctx.lineTo(e.clientX, e.clientY);
+    ctx.stroke();
+  }
+});
+
+
+maior.addEventListener("click", function(){
+    ctx.lineWidth++;
+    pincel++
+    tamanhoEl.innerHTML = pincel
 })
 
-let play = document.querySelector("#play")
-let imagem = document.querySelector("#imgDaisy")
-const honeycomb = new Audio("sons/HONEYCOMB.mp3")
-play.addEventListener("click", function(){
-    honeycomb.play()
-    imagem.style.animation = 'girando 15s linear infinite alternate'
+menos.addEventListener("click", function(){
+    ctx.lineWidth--;
+    pincel--;
+    tamanhoEl.innerHTML = pincel
 })
+corEl.addEventListener("change", 
+    function(){
+        ctx.strokeStyle = corEl.value;
+    }
+);

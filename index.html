@@ -7,16 +7,14 @@
     <link rel="icon" href="imgs/icon-guitarra.png">
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Projeto extensão</title>
+    <title>Projeto de seleção</title>
 </head>
 
 <body>
-    <h1>Projeto de seleção</h1>
-    <h3>Uma página baseada em Daisy Jones & the six</h3>
-
     <main>
+        <h2>Projeto de seleção</h2>
         <section id="sobre">
-            <h2>Sobre mim</h2>
+            <h3>Sobre mim</h3>
             <p>Meu nome é Júlia Alessandra, tenho 17 anos e sou aluna do 2° ano de tecnico em informatica no CEFET-MG.
                 Gosto de ler livros de aventura e ouvir música enquanto faço qualquer coisa, minha
                 linguagem de programação favorita é Java Script e eu pretendo trabalhar com front end.<br>
@@ -26,7 +24,7 @@
         </section>
 
         <section id="candidatar">
-            <h2>Por que estou me candidatando</h2>
+            <h3>Por que estou me candidatando</h3>
             <p>Eu estou bem ansiosa com esse projeto desde que o professor disse que iria fazer, acredito que é
                 uma oportunidade para eu ganhar mais conhecimento nessa área e em python, que é uma linguagem bastante
                 interessante e atual.<br>
@@ -36,31 +34,30 @@
         </section>
 
         <section id="expectativas">
-            <h2>Expectativas</h2>
+            <h3>Expectativas</h3>
             <p>
-                Eu tenho a expectativa de aprender Python e Django e apliar meus conhecimentos sobre web. Participar de
+                Eu tenho a expectativa de aprender Python e Django e ampliar meus conhecimentos sobre web. Participar de
                 um projeto de programação em equipe será uma boa prévia de como é em um emprego da vida real, acho
                 importante entender como é a dinâmica para me preparar para o futuro próximo
             </p>
         </section>
-
-        <div id="bateria">
-            <img src="imgs/prato2.png" id="prato2">
-            <img src="imgs/prato1.png" id="prato1">
-            <img src="imgs/prato3.png" id="prato3">
-            <img src="imgs/bumbo.png" id="bombo">
-            <img src="imgs/tarola.png" id="tarola">
-            <img src="imgs/timbalao-chao.png" id="timbalao-chao">
-            <img src="imgs/timbalao.png" id="timbalao">
-        </div>
-
-        <div id="som-caixa" class="invisivel">
-            <p><i class=" fa fa-play" aria-hidden="true" id="play"> Ouvir cover de Daisy Jones enquanto a série não
-                    sai</i></p>
-            <img src="imgs/som.png" id="imgDaisy">
-        </div>
+        <p>Temas:</p>
+        <label>
+            <input type="radio" name="cor" value="azul">Escuro
+        </label>
+        <label>
+            <input type="radio" name="cor" value="verde">Claro
+        </label>
     </main>
+
+    <section id="caixa">
+        <button id="menos">-</button>
+        <span id="tamanho">1</span>
+        <button id="mais">+</button>
+        <input type="color" id="cor">
+        <button id="limpar">x</button>
+    </section>
+    <canvas id="canvas"></canvas>
     <script src="index.js"></script>
 </body>
-
 </html>
