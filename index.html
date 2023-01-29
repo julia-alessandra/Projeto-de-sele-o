@@ -19,8 +19,11 @@
                 Gosto de ler livros de aventura e ouvir música enquanto faço qualquer coisa, minha
                 linguagem de programação favorita é Java Script e eu pretendo trabalhar com front end.<br>
                 Trabalho bem em equipe e aprendo a usar novas tecnologias com facilidade. Participo da equipe de
-                robotica TrincaBotz na área da gestão.
+                robotica TrincaBotz na área da gestão, participei da prova do torneio feminino de computação e da fase
+                nacional da OBI2022
             </p>
+            <a href="https://github.com/julia-alessandra">github</a>
+            <a href="https://www.beecrowd.com.br/judge/pt/profile/646408">beecrowd</a>
         </section>
 
         <section id="candidatar">
@@ -43,10 +46,10 @@
         </section>
         <p>Temas:</p>
         <label>
-            <input type="radio" name="cor" value="azul">Escuro
+            <input type="radio" name="cor" id="temas" value="escuro">Escuro
         </label>
         <label>
-            <input type="radio" name="cor" value="verde">Claro
+            <input type="radio" name="cor" id="temas" value="claro">Claro
         </label>
     </main>
 
@@ -55,9 +58,12 @@
         <span id="tamanho">1</span>
         <button id="mais">+</button>
         <input type="color" id="cor">
-        <button id="limpar">x</button>
+        <span id="explica" class="invisivel"></span>
     </section>
     <canvas id="canvas"></canvas>
+
+    <img src="imgs/lápis.png" id="lapis" class="sumiu">
     <script src="index.js"></script>
 </body>
+
 </html>
