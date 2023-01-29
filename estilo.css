@@ -1,48 +1,43 @@
-body{
+body {
     margin: 0%;
-    background-color: rgb(252, 252, 252);
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
-main{
-    background-color: rgb(255, 255, 255);
-    
+
+main {
+    background-color: rgb(0, 0, 0);
     width: 40vw;
     margin: 0%;
     padding: 2%;
     text-align: center;
     float: right;
     height: 100vh;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
 }
-h2{
+
+h2 {
     margin: 0%;
 }
 
-#canvas{
+#canvas {
     width: 54vw;
     height: 100vh;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
 }
-#caixa{
+
+#caixa {
     text-align: center;
     padding: .5%;
 }
-button{
-	border-radius: 50%;
+
+button {
     cursor: pointer;
 }
 
-input{
-	border-color: #000000;
+input {
     cursor: pointer;
 }
-.invisivel{
+
+.invisivel {
     visibility: hidden;
 }
-.sumiu{
-    display: none;
-}
-#lapis {
-    height: 40px;
-    position: absolute;
-  }
