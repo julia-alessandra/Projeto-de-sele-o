@@ -16,7 +16,7 @@ canva.setAttribute("height", altura);
 let ctx = canva.getContext("2d");
 
 let pressionado = false;
-ctx.strokeStyle = "black";
+ctx.strokeStyle = "white";
 ctx.lineWidth = 1;
 
 canva.addEventListener("mousedown", function (e) {
